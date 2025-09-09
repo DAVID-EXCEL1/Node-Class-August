@@ -13,6 +13,8 @@ const customerRouter = require("./routes/user.route")
 // Body-parser is like a translator.
 // It takes that raw incoming request data and converts it into a usable JavaScript object, so you can easily access it in your code.
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 const URI = process.env.URI
 
